@@ -51,7 +51,7 @@ class TimeMap {
     var right = array.count - 1
         
     while left <= right {
-      let mid = right + left / 2
+      let mid = left + (right - left) / 2
             
       if timestamp == array[mid].timestamp {
         return array[mid].value
